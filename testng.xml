@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Mavenjava">
+        <classes>
+            <class name="testmavenproject.LoginTest">
+                <methods>
+                    <include name="openWebSite"/>
+                    <include name="makeLogin"/>
+                </methods>
+            </class>
+            <class name="testmavenproject.PutInBasketTest">
+                <methods>
+                    <include name="openItemInMarketplace"/>
+                    <include name="addToBasket"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
