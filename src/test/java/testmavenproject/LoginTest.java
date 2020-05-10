@@ -9,7 +9,7 @@ public class LoginTest {
         System.out.println("Step 1: Web site opened");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"openWebSite"})
     public void makeLogin(){
         System.out.println("Step 2: Successfully logged in");
     }

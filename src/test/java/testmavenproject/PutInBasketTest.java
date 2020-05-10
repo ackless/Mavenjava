@@ -9,7 +9,7 @@ public class PutInBasketTest {
         System.out.println("Step 1: Item is opened");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"openItemInMarketplace"})
     public void addToBasket(){
         System.out.println("Step 2: Item successfully put into basket");
     }
